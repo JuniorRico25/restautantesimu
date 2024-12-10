@@ -1,0 +1,42 @@
+/* Estilos para el texto que indica el estado de la silla */
+.chair-text {
+    font-size: 12px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave */
+    cursor: pointer;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Sombra para mejorar visibilidad */
+}
+
+/* Efecto hover para cuando el mouse pasa sobre el texto */
+.chair-text:hover {
+    color: #2980b9; /* Cambia el color a azul cuando se pasa el mouse */
+    transform: scale(1.1); /* Aumenta el tamaño del texto */
+}
+
+/* Colores según el estado de la silla */
+.chair-text.available {
+    color: green;
+}
+.chair-text.reserved {
+    color: orange;
+}
+.chair-text.occupied {
+    color: red;
+}
+.chair-text.default {
+    color: black;
+}
+#exportReport {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#exportReport:hover {
+    background-color: #0056b3;
+}
